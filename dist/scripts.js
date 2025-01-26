@@ -869,7 +869,7 @@ $(document).ready(function () {
 	};
 
 	// Set the date we're counting down to
-	var countDownDate = new Date("feb  15, 2025 5:00:00").getTime();
+	var countDownDate = new Date("feb  01, 2025 15:00:00").getTime();
 	function lanzarConfeti() {
 		confetti({
 			particleCount: 150, // Número de partículas
