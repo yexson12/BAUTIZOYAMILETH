@@ -904,10 +904,23 @@ $(document).ready(function () {
 			var seconds = Math.floor((distance % 6e4) / 1e3);
 
 			// Actualiza los elementos en el HTML con el tiempo restante
-			document.getElementById("days").innerHTML = days + " <small>días</small>";
-			document.getElementById("hours").innerHTML = hours + " <small>horas</small>";
-			document.getElementById("minutes").innerHTML = minutes + " <small>minutos</small>";
-			document.getElementById("seconds").innerHTML = seconds + " <small>segundos</small>";
+			var daysde = document.getElementById("days");
+			var hoursde = document.getElementById("hours");
+			var minutesde = document.getElementById("minutes");
+			var secondsde = document.getElementById("seconds");
+			
+			if (daysde) {
+				daysde.innerHTML = days + " <small>días</small>";
+			}	
+			if (hoursde) {
+				hoursde.innerHTML = hours + " <small>horas</small>";
+			}
+				if (minutesde) {
+					minutesde.innerHTML =  minutes + " <small>minutos</small>";
+			}
+			if (secondsde) {
+				secondsde.innerHTML = seconds + " <small>segundos</small>";
+			}
 		} else {
 			
 			// Calcula el tiempo transcurrido desde la ceremonia
